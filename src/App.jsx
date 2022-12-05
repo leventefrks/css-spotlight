@@ -30,7 +30,7 @@ const App = () => {
           <a href="#">
             Get Started <FiAperture className="started-icon" />
           </a>
-          <button class="theme" onClick={() => toggleDarkMode()}>
+          <button className="theme" onClick={() => toggleDarkMode()}>
             {theme === 'dark' ? (
               <span>
                 Dark mode <BiMoon className="theme-icon" />
