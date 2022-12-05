@@ -28,16 +28,16 @@ const App = () => {
           <h1>Light</h1>
           <div className="triangle" />
           <a href="#">
-            Get Started <FiAperture className="started-icon" />
+            Get Started <FiAperture className="icon" />
           </a>
           <button className="theme" onClick={() => toggleDarkMode()}>
             {theme === 'dark' ? (
               <span>
-                Dark mode <BiMoon className="theme-icon" />
+                Dark mode <BiMoon className="icon" />
               </span>
             ) : (
               <span>
-                Light mode <BiSun className="theme-icon" />
+                Light mode <BiSun className="icon" />
               </span>
             )}
           </button>

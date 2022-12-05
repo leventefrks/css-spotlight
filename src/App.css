@@ -5,10 +5,9 @@
   text-align: center;
 }
 
-body.light {
+body {
   overscroll-behavior: none;
   min-height: 100vh;
-  background-color: #f8fafc;
 }
 
 main {
@@ -48,7 +47,7 @@ h1 {
   transform-origin: top;
   opacity: 0.8;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  animation: 5s spotlight linear infinite backwards;
+  animation: 5s spotlight linear infinite alternate;
   animation-delay: 3s;
 }
 
@@ -87,7 +86,7 @@ button span {
   gap: 0.5rem;
 }
 
-button .theme-icon {
+.icon {
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
@@ -103,6 +102,10 @@ button .theme-icon {
   50% {
     transform: rotate(90deg);
   }
+}
+
+body.light {
+  background-color: #f8fafc;
 }
 
 .body.dark {
